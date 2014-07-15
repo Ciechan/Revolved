@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5023" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RVCreditsViewController">
+            <connections>
+                <outlet property="backgroundView" destination="KYd-qv-ZHl" id="TwK-kl-0NA"/>
+                <outlet property="containerView" destination="NcQ-qU-YGN" id="5Pd-RU-Cei"/>
+                <outlet property="emailButton" destination="4q5-1w-r6n" id="VSH-J9-SyT"/>
+                <outlet property="twitterButton" destination="IKA-rK-Nwx" id="19k-50-q3m"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="KYd-qv-ZHl" userLabel="Background" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="NcQ-qU-YGN" userLabel="Container">
+                            <rect key="frame" x="362" y="209" width="300" height="350"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="IKA-rK-Nwx">
+                                    <rect key="frame" x="80" y="275" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" image="Twitter"/>
+                                    <connections>
+                                        <action selector="twitterButtonTapped:" destination="-1" eventType="touchUpInside" id="4b9-Vp-0uV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="4q5-1w-r6n">
+                                    <rect key="frame" x="170" y="275" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" image="MailButton"/>
+                                    <connections>
+                                        <action selector="emailButtonTapped:" destination="-1" eventType="touchUpInside" id="d5B-6J-KLc"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditsText" id="Nth-ab-68h">
+                                    <rect key="frame" x="38" y="56" width="224" height="158"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.9379276916" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.14999999999999999" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="backgroundTouched:" destination="-1" eventType="touchUpInside" id="V2H-BY-9Ib"/>
+                        <action selector="backgroundTouched:" destination="-1" eventType="touchUpOutside" id="ciu-0Z-HNl"/>
+                    </connections>
+                </view>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CreditsText" width="224" height="158"/>
+        <image name="MailButton" width="34" height="24"/>
+        <image name="Twitter" width="38" height="32"/>
+    </resources>
+</document>

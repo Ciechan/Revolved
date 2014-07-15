@@ -1,0 +1,1294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		980CC35C17F0AEAE0057D5AD /* RVSettingsButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980CC35B17F0AEAE0057D5AD /* RVSettingsButtonsView.m */; };
+		980CC35E17F0AECD0057D5AD /* RVSettingsButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980CC35D17F0AECD0057D5AD /* RVSettingsButtonsView.xib */; };
+		981395A917DD144700C17CB1 /* RVQuaternionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 981395A817DD144700C17CB1 /* RVQuaternionAnimation.m */; };
+		98294FAC17CFD852003CAE5F /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 98294FAB17CFD852003CAE5F /* NSArray+Functional.m */; };
+		98294FB017D354A1003CAE5F /* NSError+RevolvedErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 98294FAF17D354A1003CAE5F /* NSError+RevolvedErrors.m */; };
+		98294FB317D361C6003CAE5F /* RVModelMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 98294FB217D361C6003CAE5F /* RVModelMetadata.m */; };
+		98294FBB17D53157003CAE5F /* RVAxisShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 98294FBA17D53157003CAE5F /* RVAxisShader.m */; };
+		98294FBE17D5325A003CAE5F /* RVAxisShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 98294FBC17D5325A003CAE5F /* RVAxisShader.vsh */; };
+		98294FBF17D5325A003CAE5F /* RVAxisShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 98294FBD17D5325A003CAE5F /* RVAxisShader.fsh */; };
+		982D8D0217DCDEB6004C273F /* RVRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 982D8D0117DCDEB6004C273F /* RVRootViewController.xib */; };
+		9832A665186DEB7A003501AE /* RVExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9832A663186DEB7A003501AE /* RVExportViewController.m */; };
+		9832A666186DEB7A003501AE /* RVExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9832A664186DEB7A003501AE /* RVExportViewController.xib */; };
+		9832A66C186E0E72003501AE /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 9832A66A186E0E72003501AE /* SSZipArchive.m */; };
+		9832A66E186E0EE2003501AE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9832A66D186E0EE2003501AE /* libz.dylib */; };
+		9832A679186E0F98003501AE /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9832A671186E0F98003501AE /* ioapi.c */; };
+		9832A67A186E0F98003501AE /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 9832A673186E0F98003501AE /* mztools.c */; };
+		9832A67B186E0F98003501AE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9832A675186E0F98003501AE /* unzip.c */; };
+		9832A67C186E0F98003501AE /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9832A677186E0F98003501AE /* zip.c */; };
+		98475ACE17C0D232002FD2AB /* RVColorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 98475ACD17C0D232002FD2AB /* RVColorProvider.m */; };
+		9850E0AC17F74376006B8ACD /* UIView+RotationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9850E0AB17F74376006B8ACD /* UIView+RotationAnimation.m */; };
+		9852517D17BC09C600B348F4 /* RVColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852517C17BC09C600B348F4 /* RVColorPicker.m */; };
+		9852518217BD1F8400B348F4 /* RVAnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852518117BD1F8400B348F4 /* RVAnchorPoint.m */; };
+		9852518517BD1F9300B348F4 /* RVControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852518417BD1F9300B348F4 /* RVControlPoint.m */; };
+		9852518817BD1F9C00B348F4 /* RVEndPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852518717BD1F9C00B348F4 /* RVEndPoint.m */; };
+		9852518E17BD324900B348F4 /* RVPointShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852518D17BD324900B348F4 /* RVPointShader.m */; };
+		9852519117BD326600B348F4 /* RVPointShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9852518F17BD326600B348F4 /* RVPointShader.vsh */; };
+		9852519217BD326600B348F4 /* RVPointShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9852519017BD326600B348F4 /* RVPointShader.fsh */; };
+		9852519517BEC58200B348F4 /* RVDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852519417BEC58200B348F4 /* RVDeleteView.m */; };
+		98557F5E17D53E7D0062472B /* RVAxisMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B5C18717D5343000889553 /* RVAxisMeshController.m */; };
+		98557F6417D6758D0062472B /* RVAxisSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 98557F6317D6758D0062472B /* RVAxisSprite.m */; };
+		98557F6717D7C6190062472B /* RVGuidelineDotSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 98557F6617D7C6190062472B /* RVGuidelineDotSprite.m */; };
+		98557F6A17D7CB300062472B /* RVGuidlineDotMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98557F6917D7CB300062472B /* RVGuidlineDotMeshController.m */; };
+		98557F6D17DCD26A0062472B /* RVRenderingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98557F6C17DCD26A0062472B /* RVRenderingController.m */; };
+		9859CA1317E625AC000E539F /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9859CA1217E625AC000E539F /* NSMutableArray+MoveObject.m */; };
+		9859CA1617E627BA000E539F /* NSMutableOrderedSet+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9859CA1517E627BA000E539F /* NSMutableOrderedSet+MoveObject.m */; };
+		9859CA1E17E651B4000E539F /* RVAddProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9859CA1D17E651B4000E539F /* RVAddProgressView.m */; };
+		985E10D917C946E600BE4C28 /* RVModelSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10D817C946E600BE4C28 /* RVModelSprite.m */; };
+		985E10DC17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10DB17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.m */; };
+		985E10E117CA688400BE4C28 /* RVAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10E017CA688400BE4C28 /* RVAnimator.m */; };
+		985E10E517CA691100BE4C28 /* RVAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10E417CA691100BE4C28 /* RVAnimation.m */; };
+		985E10E817CA6B1600BE4C28 /* RVFloatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10E717CA6B1600BE4C28 /* RVFloatAnimation.m */; };
+		985E10EB17CA6B2200BE4C28 /* RVVectorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E10EA17CA6B2200BE4C28 /* RVVectorAnimation.m */; };
+		985E10EF17CA778C00BE4C28 /* RVDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985E10EE17CA778C00BE4C28 /* RVDrawViewController.xib */; };
+		9861247E17C7FA290051C092 /* RVModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861247D17C7FA290051C092 /* RVModelManager.m */; };
+		9861248317C7FCC80051C092 /* RVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861248217C7FCC80051C092 /* RVModel.m */; };
+		9861248717C8012D0051C092 /* RVModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861248617C8012D0051C092 /* RVModelCell.m */; };
+		9861248E17C802060051C092 /* UIColor+RevolvedColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861248D17C802060051C092 /* UIColor+RevolvedColors.m */; };
+		9861249417C8DDBB0051C092 /* RVRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861249317C8DDBB0051C092 /* RVRootViewController.m */; };
+		986C0C3F183816F300F8F51D /* RVOBJExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 986C0C3E183816F300F8F51D /* RVOBJExporter.m */; };
+		9872E2F117EB17E2000385EC /* mail.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9872E2F017EB17E2000385EC /* mail.txt */; };
+		9872E2F417EBA5A9000385EC /* RVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9872E2F317EBA5A9000385EC /* RVUserDefaults.m */; };
+		9872E2FB17EDF2BB000385EC /* RVTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9872E2FA17EDF2BB000385EC /* RVTutorialPage.m */; };
+		9872E2FF17EDF37D000385EC /* RVTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9872E2FD17EDF37D000385EC /* RVTutorialViewController.m */; };
+		9872E30017EDF37D000385EC /* RVTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9872E2FE17EDF37D000385EC /* RVTutorialViewController.xib */; };
+		9872E30217EF144C000385EC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9872E30117EF144C000385EC /* Social.framework */; };
+		9872E30417EF1470000385EC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9872E30317EF1470000385EC /* Twitter.framework */; };
+		9872E30617EF159D000385EC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9872E30517EF159D000385EC /* AssetsLibrary.framework */; };
+		9873945317C200910067FED5 /* RVSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873945217C200910067FED5 /* RVSprite.m */; };
+		9873945717C200B40067FED5 /* RVLineSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873945617C200B40067FED5 /* RVLineSprite.m */; };
+		9873945A17C200FC0067FED5 /* RVPointSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873945917C200FC0067FED5 /* RVPointSprite.m */; };
+		9873945E17C400BB0067FED5 /* RVModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873945C17C400BB0067FED5 /* RVModelsViewController.m */; };
+		9873945F17C400BB0067FED5 /* RVModelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9873945D17C400BB0067FED5 /* RVModelsViewController.xib */; };
+		9873946117C400D30067FED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9873946017C400D30067FED5 /* Images.xcassets */; };
+		9873946717C405130067FED5 /* RVPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873946517C405130067FED5 /* RVPictureViewController.m */; };
+		9873946817C405130067FED5 /* RVPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9873946617C405130067FED5 /* RVPictureViewController.xib */; };
+		9873946D17C53F0E0067FED5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9873946C17C53F0E0067FED5 /* AVFoundation.framework */; };
+		9873946F17C540680067FED5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9873946E17C540680067FED5 /* CoreVideo.framework */; };
+		9873947317C559790067FED5 /* RVOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9873947217C559790067FED5 /* RVOpenGLView.m */; };
+		9873947517C562050067FED5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9873947417C562050067FED5 /* QuartzCore.framework */; };
+		988180C617F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.m in Sources */ = {isa = PBXBuildFile; fileRef = 988180C517F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.m */; };
+		988180C817F385E700C0E6BD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988180C717F385E700C0E6BD /* StoreKit.framework */; };
+		98A3451917B6CAD500D0C82F /* RVPointMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3451817B6CAD500D0C82F /* RVPointMeshController.m */; };
+		98A3451C17B6CAE700D0C82F /* RVMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3451B17B6CAE700D0C82F /* RVMeshController.m */; };
+		98A3452117B7A16300D0C82F /* RVSegmentConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3452017B7A16300D0C82F /* RVSegmentConnection.m */; };
+		98A3452417B7AD2900D0C82F /* RVGuideline.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3452317B7AD2900D0C82F /* RVGuideline.m */; };
+		98A9800517E8FCD500F09CFD /* RVModelButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A9800417E8FCD500F09CFD /* RVModelButtonsView.m */; };
+		98A9800717E8FCDF00F09CFD /* RVModelButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A9800617E8FCDF00F09CFD /* RVModelButtonsView.xib */; };
+		98A9800B17E8FD9500F09CFD /* RVPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A9800917E8FD9500F09CFD /* RVPreviewViewController.m */; };
+		98A9800C17E8FD9500F09CFD /* RVPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A9800A17E8FD9500F09CFD /* RVPreviewViewController.xib */; };
+		98ADF00317FCB44200D58007 /* RVSelectTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ADF00217FCB44200D58007 /* RVSelectTutorialPage.m */; };
+		98ADF00517FCB44900D58007 /* RVSelectTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98ADF00417FCB44900D58007 /* RVSelectTutorialPage.xib */; };
+		98ADF01017FCBE7000D58007 /* RVPassForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ADF00F17FCBE7000D58007 /* RVPassForwardView.m */; };
+		98ADF01B17FDF85C00D58007 /* RVFinishTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ADF01A17FDF85C00D58007 /* RVFinishTutorialPage.m */; };
+		98ADF01D17FDF86200D58007 /* RVFinishTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98ADF01C17FDF86200D58007 /* RVFinishTutorialPage.xib */; };
+		98B8E48C17FB3ECD002F8DDB /* RVSegmentsTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E48B17FB3ECD002F8DDB /* RVSegmentsTutorialPage.m */; };
+		98B8E48E17FB3EDE002F8DDB /* RVSegmentsTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E48D17FB3EDE002F8DDB /* RVSegmentsTutorialPage.xib */; };
+		98B8E49917FB5233002F8DDB /* RVDrawingTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E49817FB5233002F8DDB /* RVDrawingTutorialPage.m */; };
+		98B8E49B17FB5249002F8DDB /* RVDrawingTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E49A17FB5249002F8DDB /* RVDrawingTutorialPage.xib */; };
+		98B8E4A817FB5FA1002F8DDB /* RVRevolvedTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E4A717FB5FA1002F8DDB /* RVRevolvedTutorialPage.m */; };
+		98B8E4AA17FB5FAC002F8DDB /* RVRevolvedTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E4A917FB5FAC002F8DDB /* RVRevolvedTutorialPage.xib */; };
+		98B8E4AD17FB695F002F8DDB /* RVTutorialLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E4AC17FB695F002F8DDB /* RVTutorialLineImageView.m */; };
+		98B8E4B517FB757B002F8DDB /* RVRevolvedTutorialPageSolid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E4B417FB757A002F8DDB /* RVRevolvedTutorialPageSolid.xib */; };
+		98B8E4C217FC87BE002F8DDB /* RVBendTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E4C117FC87BE002F8DDB /* RVBendTutorialPage.m */; };
+		98B8E4C417FC87C5002F8DDB /* RVBendTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E4C317FC87C4002F8DDB /* RVBendTutorialPage.xib */; };
+		98B8E4C717FCB2BD002F8DDB /* RVStartTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8E4C617FCB2BD002F8DDB /* RVStartTutorialPage.m */; };
+		98B8E4C917FCB2C3002F8DDB /* RVStartTutorialPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B8E4C817FCB2C3002F8DDB /* RVStartTutorialPage.xib */; };
+		98C5FE9417B2B56800022331 /* RVDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FE9317B2B56800022331 /* RVDrawViewController.m */; };
+		98C5FE9C17B2BAFD00022331 /* RVModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C5FE9617B2B96100022331 /* RVModelViewController.xib */; };
+		98C5FE9F17B2BC9D00022331 /* RVSpaceConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FE9E17B2BC9D00022331 /* RVSpaceConverter.m */; };
+		98C5FEA217B2CA0300022331 /* RVLineMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FEA117B2CA0300022331 /* RVLineMeshController.m */; };
+		98C5FEA617B2D8AC00022331 /* RVLineShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FEA517B2D8AC00022331 /* RVLineShader.m */; };
+		98C5FEA917B2D93700022331 /* RVLineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C5FEA717B2D93700022331 /* RVLineShader.fsh */; };
+		98C5FEAA17B2D93700022331 /* RVLineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 98C5FEA817B2D93700022331 /* RVLineShader.vsh */; };
+		98C5FEAD17B2EFCD00022331 /* DrawGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FEAC17B2EFCD00022331 /* DrawGestureRecognizer.m */; };
+		98C5FEB317B65EE400022331 /* RVDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FEB217B65EE400022331 /* RVDrawController.m */; };
+		98C5FEB917B66BEB00022331 /* RVPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FEB817B66BEB00022331 /* RVPoint.m */; };
+		98CD44DA18303F0D004D1986 /* RVExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CD44D918303F0D004D1986 /* RVExporter.m */; };
+		98CD44DD18304056004D1986 /* RVSTLExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CD44DC18304056004D1986 /* RVSTLExporter.m */; };
+		98D6BA0717F0EF2200BFEDB4 /* RVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D6BA0517F0EF2200BFEDB4 /* RVCreditsViewController.m */; };
+		98D6BA0817F0EF2200BFEDB4 /* RVCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D6BA0617F0EF2200BFEDB4 /* RVCreditsViewController.xib */; };
+		98EAA2301804AC6800D0B527 /* RVTutorialScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EAA22F1804AC6800D0B527 /* RVTutorialScrollView.m */; };
+		98ED503017C7CCDA00E5FE1F /* RVModelSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ED502F17C7CCDA00E5FE1F /* RVModelSerializer.m */; };
+		98FADE5217EB118E00E1DFE0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FADE5117EB118E00E1DFE0 /* MessageUI.framework */; };
+		98FB7E6C17AD75D3000262F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB7E6B17AD75D3000262F2 /* UIKit.framework */; };
+		98FB7E6E17AD75D3000262F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB7E6D17AD75D3000262F2 /* Foundation.framework */; };
+		98FB7E7017AD75D3000262F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB7E6F17AD75D3000262F2 /* CoreGraphics.framework */; };
+		98FB7E7617AD75D3000262F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98FB7E7417AD75D3000262F2 /* InfoPlist.strings */; };
+		98FB7E7817AD75D3000262F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7E7717AD75D3000262F2 /* main.m */; };
+		98FB7E7C17AD75D3000262F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7E7B17AD75D3000262F2 /* AppDelegate.m */; };
+		98FB7E9117AD76BF000262F2 /* RVSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7E9017AD76BF000262F2 /* RVSegment.m */; };
+		98FB7E9917AD785A000262F2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB7E9817AD785A000262F2 /* GLKit.framework */; };
+		98FB7E9D17AD78F0000262F2 /* RVModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7E9C17AD78F0000262F2 /* RVModelViewController.m */; };
+		98FB7EAE17AD7F21000262F2 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EAD17AD7EF7000262F2 /* CameraController.m */; };
+		98FB7EB117AD7FD4000262F2 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EB017AD7FD4000262F2 /* Camera.m */; };
+		98FB7EBA17AD8480000262F2 /* RVModelMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EB717AD8480000262F2 /* RVModelMeshController.m */; };
+		98FB7EBB17AD8480000262F2 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EB917AD8480000262F2 /* Renderer.m */; };
+		98FB7EC517AD864A000262F2 /* BCShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EC017AD864A000262F2 /* BCShader.m */; };
+		98FB7EC617AD864A000262F2 /* RVModelShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FB7EC217AD864A000262F2 /* RVModelShader.m */; };
+		98FB7EC717AD864A000262F2 /* RVModelShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 98FB7EC317AD864A000262F2 /* RVModelShader.vsh */; };
+		98FB7EC817AD864A000262F2 /* RVModelShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 98FB7EC417AD864A000262F2 /* RVModelShader.fsh */; };
+		98FB7ECE17B03B65000262F2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FB7ECD17B03B65000262F2 /* OpenGLES.framework */; };
+		98FDDB37180176A000F16136 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 98FDDB36180176A000F16136 /* noise.png */; };
+		98FDDB39180176AD00F16136 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 98FDDB38180176AD00F16136 /* sprites.png */; };
+		98FDDB3C1801930F00F16136 /* RVColorPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDDB3B1801930F00F16136 /* RVColorPickerButton.m */; };
+		98FDDB401801E4A600F16136 /* model1.rvlvd in Resources */ = {isa = PBXBuildFile; fileRef = 98FDDB3D1801E4A600F16136 /* model1.rvlvd */; };
+		98FDDB411801E4A600F16136 /* model2.rvlvd in Resources */ = {isa = PBXBuildFile; fileRef = 98FDDB3E1801E4A600F16136 /* model2.rvlvd */; };
+		98FDDB421801E4A600F16136 /* model3.rvlvd in Resources */ = {isa = PBXBuildFile; fileRef = 98FDDB3F1801E4A600F16136 /* model3.rvlvd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		980CC35A17F0AEAE0057D5AD /* RVSettingsButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVSettingsButtonsView.h; sourceTree = "<group>"; };
+		980CC35B17F0AEAE0057D5AD /* RVSettingsButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSettingsButtonsView.m; sourceTree = "<group>"; };
+		980CC35D17F0AECD0057D5AD /* RVSettingsButtonsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVSettingsButtonsView.xib; sourceTree = "<group>"; };
+		981395A717DD144700C17CB1 /* RVQuaternionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVQuaternionAnimation.h; sourceTree = "<group>"; };
+		981395A817DD144700C17CB1 /* RVQuaternionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVQuaternionAnimation.m; sourceTree = "<group>"; };
+		98294FAA17CFD852003CAE5F /* NSArray+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
+		98294FAB17CFD852003CAE5F /* NSArray+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
+		98294FAE17D354A1003CAE5F /* NSError+RevolvedErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+RevolvedErrors.h"; sourceTree = "<group>"; };
+		98294FAF17D354A1003CAE5F /* NSError+RevolvedErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+RevolvedErrors.m"; sourceTree = "<group>"; };
+		98294FB117D361C6003CAE5F /* RVModelMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelMetadata.h; sourceTree = "<group>"; };
+		98294FB217D361C6003CAE5F /* RVModelMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelMetadata.m; sourceTree = "<group>"; };
+		98294FB917D53157003CAE5F /* RVAxisShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAxisShader.h; sourceTree = "<group>"; };
+		98294FBA17D53157003CAE5F /* RVAxisShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAxisShader.m; sourceTree = "<group>"; };
+		98294FBC17D5325A003CAE5F /* RVAxisShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVAxisShader.vsh; sourceTree = "<group>"; };
+		98294FBD17D5325A003CAE5F /* RVAxisShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVAxisShader.fsh; sourceTree = "<group>"; };
+		982D8D0117DCDEB6004C273F /* RVRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVRootViewController.xib; sourceTree = "<group>"; };
+		9832A662186DEB7A003501AE /* RVExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVExportViewController.h; sourceTree = "<group>"; };
+		9832A663186DEB7A003501AE /* RVExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVExportViewController.m; sourceTree = "<group>"; };
+		9832A664186DEB7A003501AE /* RVExportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVExportViewController.xib; sourceTree = "<group>"; };
+		9832A669186E0E72003501AE /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		9832A66A186E0E72003501AE /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		9832A66D186E0EE2003501AE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9832A670186E0F98003501AE /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		9832A671186E0F98003501AE /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		9832A672186E0F98003501AE /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		9832A673186E0F98003501AE /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		9832A674186E0F98003501AE /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		9832A675186E0F98003501AE /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		9832A676186E0F98003501AE /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		9832A677186E0F98003501AE /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		9832A678186E0F98003501AE /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		98475ACC17C0D232002FD2AB /* RVColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVColorProvider.h; sourceTree = "<group>"; };
+		98475ACD17C0D232002FD2AB /* RVColorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVColorProvider.m; sourceTree = "<group>"; };
+		9850E0AA17F74376006B8ACD /* UIView+RotationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RotationAnimation.h"; sourceTree = "<group>"; };
+		9850E0AB17F74376006B8ACD /* UIView+RotationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RotationAnimation.m"; sourceTree = "<group>"; };
+		9852517B17BC09C600B348F4 /* RVColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVColorPicker.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9852517C17BC09C600B348F4 /* RVColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVColorPicker.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9852518017BD1F8400B348F4 /* RVAnchorPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVAnchorPoint.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9852518117BD1F8400B348F4 /* RVAnchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVAnchorPoint.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9852518317BD1F9300B348F4 /* RVControlPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVControlPoint.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9852518417BD1F9300B348F4 /* RVControlPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVControlPoint.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9852518617BD1F9C00B348F4 /* RVEndPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVEndPoint.h; sourceTree = "<group>"; };
+		9852518717BD1F9C00B348F4 /* RVEndPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVEndPoint.m; sourceTree = "<group>"; };
+		9852518917BD2E3700B348F4 /* PointVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PointVertex.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9852518C17BD324900B348F4 /* RVPointShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPointShader.h; sourceTree = "<group>"; };
+		9852518D17BD324900B348F4 /* RVPointShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVPointShader.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9852518F17BD326600B348F4 /* RVPointShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVPointShader.vsh; sourceTree = "<group>"; };
+		9852519017BD326600B348F4 /* RVPointShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVPointShader.fsh; sourceTree = "<group>"; };
+		9852519317BEC58200B348F4 /* RVDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVDeleteView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9852519417BEC58200B348F4 /* RVDeleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVDeleteView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98557F6217D6758D0062472B /* RVAxisSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAxisSprite.h; sourceTree = "<group>"; };
+		98557F6317D6758D0062472B /* RVAxisSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAxisSprite.m; sourceTree = "<group>"; };
+		98557F6517D7C6190062472B /* RVGuidelineDotSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVGuidelineDotSprite.h; sourceTree = "<group>"; };
+		98557F6617D7C6190062472B /* RVGuidelineDotSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVGuidelineDotSprite.m; sourceTree = "<group>"; };
+		98557F6817D7CB300062472B /* RVGuidlineDotMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVGuidlineDotMeshController.h; sourceTree = "<group>"; };
+		98557F6917D7CB300062472B /* RVGuidlineDotMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVGuidlineDotMeshController.m; sourceTree = "<group>"; };
+		98557F6B17DCD26A0062472B /* RVRenderingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVRenderingController.h; sourceTree = "<group>"; };
+		98557F6C17DCD26A0062472B /* RVRenderingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVRenderingController.m; sourceTree = "<group>"; };
+		9859CA1117E625AC000E539F /* NSMutableArray+MoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MoveObject.h"; sourceTree = "<group>"; };
+		9859CA1217E625AC000E539F /* NSMutableArray+MoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MoveObject.m"; sourceTree = "<group>"; };
+		9859CA1417E627BA000E539F /* NSMutableOrderedSet+MoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+MoveObject.h"; sourceTree = "<group>"; };
+		9859CA1517E627BA000E539F /* NSMutableOrderedSet+MoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+MoveObject.m"; sourceTree = "<group>"; };
+		9859CA1C17E651B4000E539F /* RVAddProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAddProgressView.h; sourceTree = "<group>"; };
+		9859CA1D17E651B4000E539F /* RVAddProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAddProgressView.m; sourceTree = "<group>"; };
+		985E10D717C946E600BE4C28 /* RVModelSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelSprite.h; sourceTree = "<group>"; };
+		985E10D817C946E600BE4C28 /* RVModelSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelSprite.m; sourceTree = "<group>"; };
+		985E10DA17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+BlockEnumeration.h"; sourceTree = "<group>"; };
+		985E10DB17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+BlockEnumeration.m"; sourceTree = "<group>"; };
+		985E10DF17CA688400BE4C28 /* RVAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAnimator.h; sourceTree = "<group>"; };
+		985E10E017CA688400BE4C28 /* RVAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAnimator.m; sourceTree = "<group>"; };
+		985E10E317CA691100BE4C28 /* RVAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAnimation.h; sourceTree = "<group>"; };
+		985E10E417CA691100BE4C28 /* RVAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAnimation.m; sourceTree = "<group>"; };
+		985E10E617CA6B1600BE4C28 /* RVFloatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVFloatAnimation.h; sourceTree = "<group>"; };
+		985E10E717CA6B1600BE4C28 /* RVFloatAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVFloatAnimation.m; sourceTree = "<group>"; };
+		985E10E917CA6B2200BE4C28 /* RVVectorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVVectorAnimation.h; sourceTree = "<group>"; };
+		985E10EA17CA6B2200BE4C28 /* RVVectorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVVectorAnimation.m; sourceTree = "<group>"; };
+		985E10EC17CA6B4E00BE4C28 /* RVAnimation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVAnimation_Private.h; sourceTree = "<group>"; };
+		985E10EE17CA778C00BE4C28 /* RVDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVDrawViewController.xib; sourceTree = "<group>"; };
+		9861247A17C7F59E0051C092 /* RVConnectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVConnectionTests.m; sourceTree = "<group>"; };
+		9861247C17C7FA290051C092 /* RVModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelManager.h; sourceTree = "<group>"; };
+		9861247D17C7FA290051C092 /* RVModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelManager.m; sourceTree = "<group>"; };
+		9861248117C7FCC80051C092 /* RVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModel.h; sourceTree = "<group>"; };
+		9861248217C7FCC80051C092 /* RVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModel.m; sourceTree = "<group>"; };
+		9861248517C8012D0051C092 /* RVModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelCell.h; sourceTree = "<group>"; };
+		9861248617C8012D0051C092 /* RVModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelCell.m; sourceTree = "<group>"; };
+		9861248C17C802060051C092 /* UIColor+RevolvedColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RevolvedColors.h"; sourceTree = "<group>"; };
+		9861248D17C802060051C092 /* UIColor+RevolvedColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RevolvedColors.m"; sourceTree = "<group>"; };
+		9861249217C8DDBB0051C092 /* RVRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVRootViewController.h; sourceTree = "<group>"; };
+		9861249317C8DDBB0051C092 /* RVRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVRootViewController.m; sourceTree = "<group>"; };
+		986C0C3D183816F300F8F51D /* RVOBJExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVOBJExporter.h; sourceTree = "<group>"; };
+		986C0C3E183816F300F8F51D /* RVOBJExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVOBJExporter.m; sourceTree = "<group>"; };
+		9872E2F017EB17E2000385EC /* mail.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mail.txt; sourceTree = "<group>"; };
+		9872E2F217EBA5A9000385EC /* RVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVUserDefaults.h; sourceTree = "<group>"; };
+		9872E2F317EBA5A9000385EC /* RVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVUserDefaults.m; sourceTree = "<group>"; };
+		9872E2F917EDF2BB000385EC /* RVTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVTutorialPage.h; sourceTree = "<group>"; };
+		9872E2FA17EDF2BB000385EC /* RVTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVTutorialPage.m; sourceTree = "<group>"; };
+		9872E2FC17EDF37D000385EC /* RVTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVTutorialViewController.h; sourceTree = "<group>"; };
+		9872E2FD17EDF37D000385EC /* RVTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVTutorialViewController.m; sourceTree = "<group>"; };
+		9872E2FE17EDF37D000385EC /* RVTutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVTutorialViewController.xib; sourceTree = "<group>"; };
+		9872E30117EF144C000385EC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9872E30317EF1470000385EC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		9872E30517EF159D000385EC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9873945117C200910067FED5 /* RVSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVSprite.h; sourceTree = "<group>"; };
+		9873945217C200910067FED5 /* RVSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSprite.m; sourceTree = "<group>"; };
+		9873945517C200B40067FED5 /* RVLineSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVLineSprite.h; sourceTree = "<group>"; };
+		9873945617C200B40067FED5 /* RVLineSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVLineSprite.m; sourceTree = "<group>"; };
+		9873945817C200FC0067FED5 /* RVPointSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPointSprite.h; sourceTree = "<group>"; };
+		9873945917C200FC0067FED5 /* RVPointSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPointSprite.m; sourceTree = "<group>"; };
+		9873945B17C400BB0067FED5 /* RVModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelsViewController.h; sourceTree = "<group>"; };
+		9873945C17C400BB0067FED5 /* RVModelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelsViewController.m; sourceTree = "<group>"; };
+		9873945D17C400BB0067FED5 /* RVModelsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVModelsViewController.xib; sourceTree = "<group>"; };
+		9873946017C400D30067FED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Revolved/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		9873946417C405130067FED5 /* RVPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPictureViewController.h; sourceTree = "<group>"; };
+		9873946517C405130067FED5 /* RVPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPictureViewController.m; sourceTree = "<group>"; };
+		9873946617C405130067FED5 /* RVPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVPictureViewController.xib; sourceTree = "<group>"; };
+		9873946C17C53F0E0067FED5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9873946E17C540680067FED5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9873947117C559790067FED5 /* RVOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVOpenGLView.h; sourceTree = "<group>"; };
+		9873947217C559790067FED5 /* RVOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVOpenGLView.m; sourceTree = "<group>"; };
+		9873947417C562050067FED5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		988180C417F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFMailComposeViewController+SendIfPossible.h"; sourceTree = "<group>"; };
+		988180C517F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFMailComposeViewController+SendIfPossible.m"; sourceTree = "<group>"; };
+		988180C717F385E700C0E6BD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		98A3451717B6CAD500D0C82F /* RVPointMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPointMeshController.h; sourceTree = "<group>"; };
+		98A3451817B6CAD500D0C82F /* RVPointMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPointMeshController.m; sourceTree = "<group>"; };
+		98A3451A17B6CAE700D0C82F /* RVMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMeshController.h; sourceTree = "<group>"; };
+		98A3451B17B6CAE700D0C82F /* RVMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVMeshController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98A3451D17B6CB2800D0C82F /* RVMeshController_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVMeshController_Private.h; sourceTree = "<group>"; };
+		98A3451E17B6E4D900D0C82F /* SegmentEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SegmentEnd.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98A3451F17B7A16300D0C82F /* RVSegmentConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVSegmentConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98A3452017B7A16300D0C82F /* RVSegmentConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVSegmentConnection.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98A3452217B7AD2900D0C82F /* RVGuideline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVGuideline.h; sourceTree = "<group>"; };
+		98A3452317B7AD2900D0C82F /* RVGuideline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVGuideline.m; sourceTree = "<group>"; };
+		98A9800317E8FCD500F09CFD /* RVModelButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelButtonsView.h; sourceTree = "<group>"; };
+		98A9800417E8FCD500F09CFD /* RVModelButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelButtonsView.m; sourceTree = "<group>"; };
+		98A9800617E8FCDF00F09CFD /* RVModelButtonsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVModelButtonsView.xib; sourceTree = "<group>"; };
+		98A9800817E8FD9500F09CFD /* RVPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPreviewViewController.h; sourceTree = "<group>"; };
+		98A9800917E8FD9500F09CFD /* RVPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPreviewViewController.m; sourceTree = "<group>"; };
+		98A9800A17E8FD9500F09CFD /* RVPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVPreviewViewController.xib; sourceTree = "<group>"; };
+		98ADF00117FCB44200D58007 /* RVSelectTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVSelectTutorialPage.h; sourceTree = "<group>"; };
+		98ADF00217FCB44200D58007 /* RVSelectTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSelectTutorialPage.m; sourceTree = "<group>"; };
+		98ADF00417FCB44900D58007 /* RVSelectTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVSelectTutorialPage.xib; sourceTree = "<group>"; };
+		98ADF00E17FCBE7000D58007 /* RVPassForwardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPassForwardView.h; sourceTree = "<group>"; };
+		98ADF00F17FCBE7000D58007 /* RVPassForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPassForwardView.m; sourceTree = "<group>"; };
+		98ADF01917FDF85C00D58007 /* RVFinishTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVFinishTutorialPage.h; sourceTree = "<group>"; };
+		98ADF01A17FDF85C00D58007 /* RVFinishTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVFinishTutorialPage.m; sourceTree = "<group>"; };
+		98ADF01C17FDF86200D58007 /* RVFinishTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVFinishTutorialPage.xib; sourceTree = "<group>"; };
+		98B5C18617D5343000889553 /* RVAxisMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAxisMeshController.h; sourceTree = "<group>"; };
+		98B5C18717D5343000889553 /* RVAxisMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAxisMeshController.m; sourceTree = "<group>"; };
+		98B5C18917D5346F00889553 /* AxisVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxisVertex.h; sourceTree = "<group>"; };
+		98B8E48A17FB3ECD002F8DDB /* RVSegmentsTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVSegmentsTutorialPage.h; sourceTree = "<group>"; };
+		98B8E48B17FB3ECD002F8DDB /* RVSegmentsTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSegmentsTutorialPage.m; sourceTree = "<group>"; };
+		98B8E48D17FB3EDE002F8DDB /* RVSegmentsTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVSegmentsTutorialPage.xib; sourceTree = "<group>"; };
+		98B8E49717FB5233002F8DDB /* RVDrawingTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVDrawingTutorialPage.h; sourceTree = "<group>"; };
+		98B8E49817FB5233002F8DDB /* RVDrawingTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVDrawingTutorialPage.m; sourceTree = "<group>"; };
+		98B8E49A17FB5249002F8DDB /* RVDrawingTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVDrawingTutorialPage.xib; sourceTree = "<group>"; };
+		98B8E4A617FB5FA1002F8DDB /* RVRevolvedTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVRevolvedTutorialPage.h; sourceTree = "<group>"; };
+		98B8E4A717FB5FA1002F8DDB /* RVRevolvedTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVRevolvedTutorialPage.m; sourceTree = "<group>"; };
+		98B8E4A917FB5FAC002F8DDB /* RVRevolvedTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVRevolvedTutorialPage.xib; sourceTree = "<group>"; };
+		98B8E4AB17FB695F002F8DDB /* RVTutorialLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVTutorialLineImageView.h; sourceTree = "<group>"; };
+		98B8E4AC17FB695F002F8DDB /* RVTutorialLineImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVTutorialLineImageView.m; sourceTree = "<group>"; };
+		98B8E4B417FB757A002F8DDB /* RVRevolvedTutorialPageSolid.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVRevolvedTutorialPageSolid.xib; sourceTree = "<group>"; };
+		98B8E4C017FC87BE002F8DDB /* RVBendTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVBendTutorialPage.h; sourceTree = "<group>"; };
+		98B8E4C117FC87BE002F8DDB /* RVBendTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVBendTutorialPage.m; sourceTree = "<group>"; };
+		98B8E4C317FC87C4002F8DDB /* RVBendTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVBendTutorialPage.xib; sourceTree = "<group>"; };
+		98B8E4C517FCB2BD002F8DDB /* RVStartTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVStartTutorialPage.h; sourceTree = "<group>"; };
+		98B8E4C617FCB2BD002F8DDB /* RVStartTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVStartTutorialPage.m; sourceTree = "<group>"; };
+		98B8E4C817FCB2C3002F8DDB /* RVStartTutorialPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVStartTutorialPage.xib; sourceTree = "<group>"; };
+		98C5FE9217B2B56800022331 /* RVDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVDrawViewController.h; sourceTree = "<group>"; };
+		98C5FE9317B2B56800022331 /* RVDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVDrawViewController.m; sourceTree = "<group>"; };
+		98C5FE9617B2B96100022331 /* RVModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RVModelViewController.xib; sourceTree = "<group>"; };
+		98C5FE9D17B2BC9D00022331 /* RVSpaceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVSpaceConverter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98C5FE9E17B2BC9D00022331 /* RVSpaceConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVSpaceConverter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98C5FEA017B2CA0300022331 /* RVLineMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVLineMeshController.h; sourceTree = "<group>"; };
+		98C5FEA117B2CA0300022331 /* RVLineMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVLineMeshController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98C5FEA317B2CA3300022331 /* LineVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineVertex.h; sourceTree = "<group>"; };
+		98C5FEA417B2D8AC00022331 /* RVLineShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVLineShader.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98C5FEA517B2D8AC00022331 /* RVLineShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVLineShader.m; sourceTree = "<group>"; };
+		98C5FEA717B2D93700022331 /* RVLineShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVLineShader.fsh; sourceTree = "<group>"; };
+		98C5FEA817B2D93700022331 /* RVLineShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVLineShader.vsh; sourceTree = "<group>"; };
+		98C5FEAB17B2EFCD00022331 /* DrawGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrawGestureRecognizer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98C5FEAC17B2EFCD00022331 /* DrawGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGestureRecognizer.m; sourceTree = "<group>"; };
+		98C5FEAE17B6591600022331 /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Geometry.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98C5FEB117B65EE400022331 /* RVDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVDrawController.h; sourceTree = "<group>"; };
+		98C5FEB217B65EE400022331 /* RVDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVDrawController.m; sourceTree = "<group>"; };
+		98C5FEB717B66BEB00022331 /* RVPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPoint.h; sourceTree = "<group>"; };
+		98C5FEB817B66BEB00022331 /* RVPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPoint.m; sourceTree = "<group>"; };
+		98CD44D818303F0D004D1986 /* RVExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVExporter.h; sourceTree = "<group>"; };
+		98CD44D918303F0D004D1986 /* RVExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVExporter.m; sourceTree = "<group>"; };
+		98CD44DB18304056004D1986 /* RVSTLExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVSTLExporter.h; sourceTree = "<group>"; };
+		98CD44DC18304056004D1986 /* RVSTLExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSTLExporter.m; sourceTree = "<group>"; };
+		98D6BA0417F0EF2100BFEDB4 /* RVCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVCreditsViewController.h; sourceTree = "<group>"; };
+		98D6BA0517F0EF2200BFEDB4 /* RVCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVCreditsViewController.m; sourceTree = "<group>"; };
+		98D6BA0617F0EF2200BFEDB4 /* RVCreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVCreditsViewController.xib; sourceTree = "<group>"; };
+		98EAA22E1804AC6800D0B527 /* RVTutorialScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVTutorialScrollView.h; sourceTree = "<group>"; };
+		98EAA22F1804AC6800D0B527 /* RVTutorialScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVTutorialScrollView.m; sourceTree = "<group>"; };
+		98ED502E17C7CCDA00E5FE1F /* RVModelSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelSerializer.h; sourceTree = "<group>"; };
+		98ED502F17C7CCDA00E5FE1F /* RVModelSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelSerializer.m; sourceTree = "<group>"; };
+		98ED507A17C7CF6800E5FE1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		98ED508017C7CF6800E5FE1F /* Revolved Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Revolved Tests-Info.plist"; sourceTree = "<group>"; };
+		98ED508217C7CF6800E5FE1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98ED508617C7CF6800E5FE1F /* Revolved Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Revolved Tests-Prefix.pch"; sourceTree = "<group>"; };
+		98ED508D17C7D07000E5FE1F /* RVSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVSerializerTests.m; sourceTree = "<group>"; };
+		98FADE5117EB118E00E1DFE0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		98FB7E6817AD75D3000262F2 /* Revolved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revolved.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FB7E6B17AD75D3000262F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		98FB7E6D17AD75D3000262F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98FB7E6F17AD75D3000262F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		98FB7E7317AD75D3000262F2 /* Revolved-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Revolved-Info.plist"; sourceTree = "<group>"; };
+		98FB7E7517AD75D3000262F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98FB7E7717AD75D3000262F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98FB7E7917AD75D3000262F2 /* Revolved-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Revolved-Prefix.pch"; sourceTree = "<group>"; };
+		98FB7E7A17AD75D3000262F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98FB7E7B17AD75D3000262F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98FB7E8F17AD76BF000262F2 /* RVSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVSegment.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98FB7E9017AD76BF000262F2 /* RVSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVSegment.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98FB7E9817AD785A000262F2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		98FB7E9B17AD78F0000262F2 /* RVModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RVModelViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98FB7E9C17AD78F0000262F2 /* RVModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RVModelViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		98FB7E9F17AD79A8000262F2 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		98FB7EAC17AD7EF7000262F2 /* CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		98FB7EAD17AD7EF7000262F2 /* CameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		98FB7EAF17AD7FD4000262F2 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		98FB7EB017AD7FD4000262F2 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		98FB7EB217AD82CB000262F2 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Vertex.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98FB7EB617AD8480000262F2 /* RVModelMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelMeshController.h; sourceTree = "<group>"; };
+		98FB7EB717AD8480000262F2 /* RVModelMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelMeshController.m; sourceTree = "<group>"; };
+		98FB7EB817AD8480000262F2 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		98FB7EB917AD8480000262F2 /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		98FB7EBE17AD864A000262F2 /* BCShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCShader.h; sourceTree = "<group>"; };
+		98FB7EBF17AD864A000262F2 /* BCShader_SubclassHooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCShader_SubclassHooks.h; sourceTree = "<group>"; };
+		98FB7EC017AD864A000262F2 /* BCShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCShader.m; sourceTree = "<group>"; };
+		98FB7EC117AD864A000262F2 /* RVModelShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVModelShader.h; sourceTree = "<group>"; };
+		98FB7EC217AD864A000262F2 /* RVModelShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVModelShader.m; sourceTree = "<group>"; };
+		98FB7EC317AD864A000262F2 /* RVModelShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVModelShader.vsh; sourceTree = "<group>"; };
+		98FB7EC417AD864A000262F2 /* RVModelShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RVModelShader.fsh; sourceTree = "<group>"; };
+		98FB7EC917B0293D000262F2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Constants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		98FB7ECD17B03B65000262F2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		98FDDB36180176A000F16136 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		98FDDB38180176AD00F16136 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		98FDDB3A1801930F00F16136 /* RVColorPickerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVColorPickerButton.h; sourceTree = "<group>"; };
+		98FDDB3B1801930F00F16136 /* RVColorPickerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVColorPickerButton.m; sourceTree = "<group>"; };
+		98FDDB3D1801E4A600F16136 /* model1.rvlvd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model1.rvlvd; sourceTree = "<group>"; };
+		98FDDB3E1801E4A600F16136 /* model2.rvlvd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model2.rvlvd; sourceTree = "<group>"; };
+		98FDDB3F1801E4A600F16136 /* model3.rvlvd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model3.rvlvd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98FB7E6517AD75D3000262F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9832A66E186E0EE2003501AE /* libz.dylib in Frameworks */,
+				988180C817F385E700C0E6BD /* StoreKit.framework in Frameworks */,
+				9872E30617EF159D000385EC /* AssetsLibrary.framework in Frameworks */,
+				9872E30417EF1470000385EC /* Twitter.framework in Frameworks */,
+				9872E30217EF144C000385EC /* Social.framework in Frameworks */,
+				98FADE5217EB118E00E1DFE0 /* MessageUI.framework in Frameworks */,
+				9873947517C562050067FED5 /* QuartzCore.framework in Frameworks */,
+				9873946F17C540680067FED5 /* CoreVideo.framework in Frameworks */,
+				9873946D17C53F0E0067FED5 /* AVFoundation.framework in Frameworks */,
+				98FB7ECE17B03B65000262F2 /* OpenGLES.framework in Frameworks */,
+				98FB7E9917AD785A000262F2 /* GLKit.framework in Frameworks */,
+				98FB7E6C17AD75D3000262F2 /* UIKit.framework in Frameworks */,
+				98FB7E6E17AD75D3000262F2 /* Foundation.framework in Frameworks */,
+				98FB7E7017AD75D3000262F2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9832A667186E0E65003501AE /* SSZip */ = {
+			isa = PBXGroup;
+			children = (
+				9832A66F186E0F98003501AE /* minizip */,
+				9832A669186E0E72003501AE /* SSZipArchive.h */,
+				9832A66A186E0E72003501AE /* SSZipArchive.m */,
+			);
+			name = SSZip;
+			sourceTree = "<group>";
+		};
+		9832A66F186E0F98003501AE /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				9832A670186E0F98003501AE /* crypt.h */,
+				9832A671186E0F98003501AE /* ioapi.c */,
+				9832A672186E0F98003501AE /* ioapi.h */,
+				9832A673186E0F98003501AE /* mztools.c */,
+				9832A674186E0F98003501AE /* mztools.h */,
+				9832A675186E0F98003501AE /* unzip.c */,
+				9832A676186E0F98003501AE /* unzip.h */,
+				9832A677186E0F98003501AE /* zip.c */,
+				9832A678186E0F98003501AE /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		9852517F17BD1F6F00B348F4 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				9852518017BD1F8400B348F4 /* RVAnchorPoint.h */,
+				9852518117BD1F8400B348F4 /* RVAnchorPoint.m */,
+				9852518317BD1F9300B348F4 /* RVControlPoint.h */,
+				9852518417BD1F9300B348F4 /* RVControlPoint.m */,
+				9852518617BD1F9C00B348F4 /* RVEndPoint.h */,
+				9852518717BD1F9C00B348F4 /* RVEndPoint.m */,
+			);
+			name = Points;
+			sourceTree = "<group>";
+		};
+		985E10DE17CA687500BE4C28 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				985E10DF17CA688400BE4C28 /* RVAnimator.h */,
+				985E10E017CA688400BE4C28 /* RVAnimator.m */,
+				985E10E317CA691100BE4C28 /* RVAnimation.h */,
+				985E10EC17CA6B4E00BE4C28 /* RVAnimation_Private.h */,
+				985E10E417CA691100BE4C28 /* RVAnimation.m */,
+				985E10E617CA6B1600BE4C28 /* RVFloatAnimation.h */,
+				985E10E717CA6B1600BE4C28 /* RVFloatAnimation.m */,
+				985E10E917CA6B2200BE4C28 /* RVVectorAnimation.h */,
+				985E10EA17CA6B2200BE4C28 /* RVVectorAnimation.m */,
+				981395A717DD144700C17CB1 /* RVQuaternionAnimation.h */,
+				981395A817DD144700C17CB1 /* RVQuaternionAnimation.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		9861247F17C7FA300051C092 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				98ADF00E17FCBE7000D58007 /* RVPassForwardView.h */,
+				98ADF00F17FCBE7000D58007 /* RVPassForwardView.m */,
+				98C5FEAB17B2EFCD00022331 /* DrawGestureRecognizer.h */,
+				98C5FEAC17B2EFCD00022331 /* DrawGestureRecognizer.m */,
+				9861248C17C802060051C092 /* UIColor+RevolvedColors.h */,
+				9861248D17C802060051C092 /* UIColor+RevolvedColors.m */,
+				98294FAA17CFD852003CAE5F /* NSArray+Functional.h */,
+				98294FAB17CFD852003CAE5F /* NSArray+Functional.m */,
+				98294FAE17D354A1003CAE5F /* NSError+RevolvedErrors.h */,
+				98294FAF17D354A1003CAE5F /* NSError+RevolvedErrors.m */,
+				985E10DA17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.h */,
+				985E10DB17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.m */,
+				9850E0AA17F74376006B8ACD /* UIView+RotationAnimation.h */,
+				9850E0AB17F74376006B8ACD /* UIView+RotationAnimation.m */,
+				9859CA1117E625AC000E539F /* NSMutableArray+MoveObject.h */,
+				9859CA1217E625AC000E539F /* NSMutableArray+MoveObject.m */,
+				9859CA1417E627BA000E539F /* NSMutableOrderedSet+MoveObject.h */,
+				9859CA1517E627BA000E539F /* NSMutableOrderedSet+MoveObject.m */,
+				988180C417F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.h */,
+				988180C517F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		9861248017C7FCB10051C092 /* Model Handling */ = {
+			isa = PBXGroup;
+			children = (
+				9861247C17C7FA290051C092 /* RVModelManager.h */,
+				9861247D17C7FA290051C092 /* RVModelManager.m */,
+				98294FB117D361C6003CAE5F /* RVModelMetadata.h */,
+				98294FB217D361C6003CAE5F /* RVModelMetadata.m */,
+				9861248117C7FCC80051C092 /* RVModel.h */,
+				9861248217C7FCC80051C092 /* RVModel.m */,
+			);
+			name = "Model Handling";
+			sourceTree = "<group>";
+		};
+		9861248417C801160051C092 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9861248517C8012D0051C092 /* RVModelCell.h */,
+				9861248617C8012D0051C092 /* RVModelCell.m */,
+				980CC35A17F0AEAE0057D5AD /* RVSettingsButtonsView.h */,
+				980CC35B17F0AEAE0057D5AD /* RVSettingsButtonsView.m */,
+				980CC35D17F0AECD0057D5AD /* RVSettingsButtonsView.xib */,
+				98A9800317E8FCD500F09CFD /* RVModelButtonsView.h */,
+				98A9800417E8FCD500F09CFD /* RVModelButtonsView.m */,
+				98A9800617E8FCDF00F09CFD /* RVModelButtonsView.xib */,
+				9859CA1C17E651B4000E539F /* RVAddProgressView.h */,
+				9859CA1D17E651B4000E539F /* RVAddProgressView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9872E2F517EDF275000385EC /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9872E2F917EDF2BB000385EC /* RVTutorialPage.h */,
+				9872E2FA17EDF2BB000385EC /* RVTutorialPage.m */,
+				98EAA22E1804AC6800D0B527 /* RVTutorialScrollView.h */,
+				98EAA22F1804AC6800D0B527 /* RVTutorialScrollView.m */,
+				98B8E4C517FCB2BD002F8DDB /* RVStartTutorialPage.h */,
+				98B8E4C617FCB2BD002F8DDB /* RVStartTutorialPage.m */,
+				98B8E4C817FCB2C3002F8DDB /* RVStartTutorialPage.xib */,
+				98B8E48A17FB3ECD002F8DDB /* RVSegmentsTutorialPage.h */,
+				98B8E48B17FB3ECD002F8DDB /* RVSegmentsTutorialPage.m */,
+				98B8E48D17FB3EDE002F8DDB /* RVSegmentsTutorialPage.xib */,
+				98B8E49717FB5233002F8DDB /* RVDrawingTutorialPage.h */,
+				98B8E49817FB5233002F8DDB /* RVDrawingTutorialPage.m */,
+				98B8E49A17FB5249002F8DDB /* RVDrawingTutorialPage.xib */,
+				98B8E4A617FB5FA1002F8DDB /* RVRevolvedTutorialPage.h */,
+				98B8E4A717FB5FA1002F8DDB /* RVRevolvedTutorialPage.m */,
+				98B8E4A917FB5FAC002F8DDB /* RVRevolvedTutorialPage.xib */,
+				98B8E4B417FB757A002F8DDB /* RVRevolvedTutorialPageSolid.xib */,
+				98ADF00117FCB44200D58007 /* RVSelectTutorialPage.h */,
+				98ADF00217FCB44200D58007 /* RVSelectTutorialPage.m */,
+				98ADF00417FCB44900D58007 /* RVSelectTutorialPage.xib */,
+				98B8E4C017FC87BE002F8DDB /* RVBendTutorialPage.h */,
+				98B8E4C117FC87BE002F8DDB /* RVBendTutorialPage.m */,
+				98B8E4C317FC87C4002F8DDB /* RVBendTutorialPage.xib */,
+				98ADF01917FDF85C00D58007 /* RVFinishTutorialPage.h */,
+				98ADF01A17FDF85C00D58007 /* RVFinishTutorialPage.m */,
+				98ADF01C17FDF86200D58007 /* RVFinishTutorialPage.xib */,
+				9872E2FC17EDF37D000385EC /* RVTutorialViewController.h */,
+				9872E2FD17EDF37D000385EC /* RVTutorialViewController.m */,
+				9872E2FE17EDF37D000385EC /* RVTutorialViewController.xib */,
+				98B8E4AB17FB695F002F8DDB /* RVTutorialLineImageView.h */,
+				98B8E4AC17FB695F002F8DDB /* RVTutorialLineImageView.m */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		9873945417C200A80067FED5 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				9873945117C200910067FED5 /* RVSprite.h */,
+				9873945217C200910067FED5 /* RVSprite.m */,
+				9873945517C200B40067FED5 /* RVLineSprite.h */,
+				9873945617C200B40067FED5 /* RVLineSprite.m */,
+				9873945817C200FC0067FED5 /* RVPointSprite.h */,
+				9873945917C200FC0067FED5 /* RVPointSprite.m */,
+				985E10D717C946E600BE4C28 /* RVModelSprite.h */,
+				985E10D817C946E600BE4C28 /* RVModelSprite.m */,
+				98557F6517D7C6190062472B /* RVGuidelineDotSprite.h */,
+				98557F6617D7C6190062472B /* RVGuidelineDotSprite.m */,
+				98557F6217D6758D0062472B /* RVAxisSprite.h */,
+				98557F6317D6758D0062472B /* RVAxisSprite.m */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		98C5FE9117B2B55000022331 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				98C5FEB117B65EE400022331 /* RVDrawController.h */,
+				98C5FEB217B65EE400022331 /* RVDrawController.m */,
+				98C5FEA017B2CA0300022331 /* RVLineMeshController.h */,
+				98C5FEA117B2CA0300022331 /* RVLineMeshController.m */,
+				98B5C18617D5343000889553 /* RVAxisMeshController.h */,
+				98B5C18717D5343000889553 /* RVAxisMeshController.m */,
+				98A3451717B6CAD500D0C82F /* RVPointMeshController.h */,
+				98A3451817B6CAD500D0C82F /* RVPointMeshController.m */,
+				98FB7EB617AD8480000262F2 /* RVModelMeshController.h */,
+				98FB7EB717AD8480000262F2 /* RVModelMeshController.m */,
+				98557F6817D7CB300062472B /* RVGuidlineDotMeshController.h */,
+				98557F6917D7CB300062472B /* RVGuidlineDotMeshController.m */,
+				98C5FE9D17B2BC9D00022331 /* RVSpaceConverter.h */,
+				98C5FE9E17B2BC9D00022331 /* RVSpaceConverter.m */,
+				98C5FEA317B2CA3300022331 /* LineVertex.h */,
+				9852518917BD2E3700B348F4 /* PointVertex.h */,
+				98B5C18917D5346F00889553 /* AxisVertex.h */,
+				9852517B17BC09C600B348F4 /* RVColorPicker.h */,
+				9852517C17BC09C600B348F4 /* RVColorPicker.m */,
+				98FDDB3A1801930F00F16136 /* RVColorPickerButton.h */,
+				98FDDB3B1801930F00F16136 /* RVColorPickerButton.m */,
+				9852519317BEC58200B348F4 /* RVDeleteView.h */,
+				9852519417BEC58200B348F4 /* RVDeleteView.m */,
+				98475ACC17C0D232002FD2AB /* RVColorProvider.h */,
+				98475ACD17C0D232002FD2AB /* RVColorProvider.m */,
+			);
+			name = Drawing;
+			sourceTree = "<group>";
+		};
+		98CD44D718303F00004D1986 /* Exporters */ = {
+			isa = PBXGroup;
+			children = (
+				98CD44D818303F0D004D1986 /* RVExporter.h */,
+				98CD44D918303F0D004D1986 /* RVExporter.m */,
+				98CD44DB18304056004D1986 /* RVSTLExporter.h */,
+				98CD44DC18304056004D1986 /* RVSTLExporter.m */,
+				986C0C3D183816F300F8F51D /* RVOBJExporter.h */,
+				986C0C3E183816F300F8F51D /* RVOBJExporter.m */,
+			);
+			name = Exporters;
+			sourceTree = "<group>";
+		};
+		98ED507E17C7CF6800E5FE1F /* Revolved Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9861247A17C7F59E0051C092 /* RVConnectionTests.m */,
+				98ED508D17C7D07000E5FE1F /* RVSerializerTests.m */,
+				98ED507F17C7CF6800E5FE1F /* Supporting Files */,
+			);
+			path = "Revolved Tests";
+			sourceTree = "<group>";
+		};
+		98ED507F17C7CF6800E5FE1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98ED508017C7CF6800E5FE1F /* Revolved Tests-Info.plist */,
+				98ED508117C7CF6800E5FE1F /* InfoPlist.strings */,
+				98ED508617C7CF6800E5FE1F /* Revolved Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98FB7E5F17AD75D3000262F2 = {
+			isa = PBXGroup;
+			children = (
+				98FB7E7117AD75D3000262F2 /* Revolved */,
+				98ED507E17C7CF6800E5FE1F /* Revolved Tests */,
+				98FB7E6A17AD75D3000262F2 /* Frameworks */,
+				98FB7E6917AD75D3000262F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98FB7E6917AD75D3000262F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FB7E6817AD75D3000262F2 /* Revolved.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FB7E6A17AD75D3000262F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9832A66D186E0EE2003501AE /* libz.dylib */,
+				988180C717F385E700C0E6BD /* StoreKit.framework */,
+				9872E30517EF159D000385EC /* AssetsLibrary.framework */,
+				9872E30317EF1470000385EC /* Twitter.framework */,
+				9872E30117EF144C000385EC /* Social.framework */,
+				98FADE5117EB118E00E1DFE0 /* MessageUI.framework */,
+				9873947417C562050067FED5 /* QuartzCore.framework */,
+				9873946E17C540680067FED5 /* CoreVideo.framework */,
+				9873946C17C53F0E0067FED5 /* AVFoundation.framework */,
+				98FB7ECD17B03B65000262F2 /* OpenGLES.framework */,
+				98FB7E9817AD785A000262F2 /* GLKit.framework */,
+				98FB7E6B17AD75D3000262F2 /* UIKit.framework */,
+				98FB7E6D17AD75D3000262F2 /* Foundation.framework */,
+				98FB7E6F17AD75D3000262F2 /* CoreGraphics.framework */,
+				98ED507A17C7CF6800E5FE1F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FB7E7117AD75D3000262F2 /* Revolved */ = {
+			isa = PBXGroup;
+			children = (
+				98CD44D718303F00004D1986 /* Exporters */,
+				9872E2F517EDF275000385EC /* Tutorial */,
+				985E10DE17CA687500BE4C28 /* Animation */,
+				9861248017C7FCB10051C092 /* Model Handling */,
+				9861247F17C7FA300051C092 /* Misc */,
+				9873945417C200A80067FED5 /* Sprites */,
+				98C5FE9117B2B55000022331 /* Drawing */,
+				98FB7EBC17AD8610000262F2 /* Rendering */,
+				9861248417C801160051C092 /* Views */,
+				98FB7EA817AD7D7C000262F2 /* Preview */,
+				98FB7E9A17AD78E0000262F2 /* ViewControllers */,
+				98FB7E9E17AD7999000262F2 /* Model */,
+				98FB7E7A17AD75D3000262F2 /* AppDelegate.h */,
+				98FB7E7B17AD75D3000262F2 /* AppDelegate.m */,
+				9872E2F217EBA5A9000385EC /* RVUserDefaults.h */,
+				9872E2F317EBA5A9000385EC /* RVUserDefaults.m */,
+				98FB7E7217AD75D3000262F2 /* Supporting Files */,
+				9873946017C400D30067FED5 /* Images.xcassets */,
+			);
+			name = Revolved;
+			path = Revolved;
+			sourceTree = "<group>";
+		};
+		98FB7E7217AD75D3000262F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9832A667186E0E65003501AE /* SSZip */,
+				98FDDB3D1801E4A600F16136 /* model1.rvlvd */,
+				98FDDB3E1801E4A600F16136 /* model2.rvlvd */,
+				98FDDB3F1801E4A600F16136 /* model3.rvlvd */,
+				9872E2F017EB17E2000385EC /* mail.txt */,
+				98FDDB36180176A000F16136 /* noise.png */,
+				98FDDB38180176AD00F16136 /* sprites.png */,
+				98FB7E7317AD75D3000262F2 /* Revolved-Info.plist */,
+				98FB7E7417AD75D3000262F2 /* InfoPlist.strings */,
+				98FB7E7717AD75D3000262F2 /* main.m */,
+				98FB7E7917AD75D3000262F2 /* Revolved-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98FB7E9A17AD78E0000262F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98C5FE9217B2B56800022331 /* RVDrawViewController.h */,
+				98C5FE9317B2B56800022331 /* RVDrawViewController.m */,
+				985E10EE17CA778C00BE4C28 /* RVDrawViewController.xib */,
+				98A9800817E8FD9500F09CFD /* RVPreviewViewController.h */,
+				98A9800917E8FD9500F09CFD /* RVPreviewViewController.m */,
+				98A9800A17E8FD9500F09CFD /* RVPreviewViewController.xib */,
+				98D6BA0417F0EF2100BFEDB4 /* RVCreditsViewController.h */,
+				98D6BA0517F0EF2200BFEDB4 /* RVCreditsViewController.m */,
+				98D6BA0617F0EF2200BFEDB4 /* RVCreditsViewController.xib */,
+				98FB7E9B17AD78F0000262F2 /* RVModelViewController.h */,
+				98FB7E9C17AD78F0000262F2 /* RVModelViewController.m */,
+				98C5FE9617B2B96100022331 /* RVModelViewController.xib */,
+				9873945B17C400BB0067FED5 /* RVModelsViewController.h */,
+				9873945C17C400BB0067FED5 /* RVModelsViewController.m */,
+				9873945D17C400BB0067FED5 /* RVModelsViewController.xib */,
+				9873946417C405130067FED5 /* RVPictureViewController.h */,
+				9873946517C405130067FED5 /* RVPictureViewController.m */,
+				9873946617C405130067FED5 /* RVPictureViewController.xib */,
+				9861249217C8DDBB0051C092 /* RVRootViewController.h */,
+				9861249317C8DDBB0051C092 /* RVRootViewController.m */,
+				982D8D0117DCDEB6004C273F /* RVRootViewController.xib */,
+				9832A662186DEB7A003501AE /* RVExportViewController.h */,
+				9832A663186DEB7A003501AE /* RVExportViewController.m */,
+				9832A664186DEB7A003501AE /* RVExportViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		98FB7E9E17AD7999000262F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9852517F17BD1F6F00B348F4 /* Points */,
+				98C5FEB717B66BEB00022331 /* RVPoint.h */,
+				98C5FEB817B66BEB00022331 /* RVPoint.m */,
+				98FB7E8F17AD76BF000262F2 /* RVSegment.h */,
+				98FB7E9017AD76BF000262F2 /* RVSegment.m */,
+				98A3451F17B7A16300D0C82F /* RVSegmentConnection.h */,
+				98A3452017B7A16300D0C82F /* RVSegmentConnection.m */,
+				98A3452217B7AD2900D0C82F /* RVGuideline.h */,
+				98A3452317B7AD2900D0C82F /* RVGuideline.m */,
+				98ED502E17C7CCDA00E5FE1F /* RVModelSerializer.h */,
+				98ED502F17C7CCDA00E5FE1F /* RVModelSerializer.m */,
+				98FB7E9F17AD79A8000262F2 /* Color.h */,
+				98C5FEAE17B6591600022331 /* Geometry.h */,
+				98A3451E17B6E4D900D0C82F /* SegmentEnd.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		98FB7EA817AD7D7C000262F2 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				98FB7EAC17AD7EF7000262F2 /* CameraController.h */,
+				98FB7EAD17AD7EF7000262F2 /* CameraController.m */,
+				98FB7EAF17AD7FD4000262F2 /* Camera.h */,
+				98FB7EB017AD7FD4000262F2 /* Camera.m */,
+				98FB7EB817AD8480000262F2 /* Renderer.h */,
+				98FB7EB917AD8480000262F2 /* Renderer.m */,
+				98557F6B17DCD26A0062472B /* RVRenderingController.h */,
+				98557F6C17DCD26A0062472B /* RVRenderingController.m */,
+				98FB7EB217AD82CB000262F2 /* Vertex.h */,
+				98FB7EC917B0293D000262F2 /* Constants.h */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
+		98FB7EBC17AD8610000262F2 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				98FB7EBD17AD861D000262F2 /* Shaders */,
+				98A3451A17B6CAE700D0C82F /* RVMeshController.h */,
+				98A3451D17B6CB2800D0C82F /* RVMeshController_Private.h */,
+				98A3451B17B6CAE700D0C82F /* RVMeshController.m */,
+				9873947117C559790067FED5 /* RVOpenGLView.h */,
+				9873947217C559790067FED5 /* RVOpenGLView.m */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+		98FB7EBD17AD861D000262F2 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				98FB7EBE17AD864A000262F2 /* BCShader.h */,
+				98FB7EBF17AD864A000262F2 /* BCShader_SubclassHooks.h */,
+				98FB7EC017AD864A000262F2 /* BCShader.m */,
+				98FB7EC117AD864A000262F2 /* RVModelShader.h */,
+				98FB7EC217AD864A000262F2 /* RVModelShader.m */,
+				98FB7EC317AD864A000262F2 /* RVModelShader.vsh */,
+				98FB7EC417AD864A000262F2 /* RVModelShader.fsh */,
+				98294FB917D53157003CAE5F /* RVAxisShader.h */,
+				98294FBA17D53157003CAE5F /* RVAxisShader.m */,
+				98294FBC17D5325A003CAE5F /* RVAxisShader.vsh */,
+				98294FBD17D5325A003CAE5F /* RVAxisShader.fsh */,
+				98C5FEA417B2D8AC00022331 /* RVLineShader.h */,
+				98C5FEA517B2D8AC00022331 /* RVLineShader.m */,
+				98C5FEA817B2D93700022331 /* RVLineShader.vsh */,
+				98C5FEA717B2D93700022331 /* RVLineShader.fsh */,
+				9852518C17BD324900B348F4 /* RVPointShader.h */,
+				9852518D17BD324900B348F4 /* RVPointShader.m */,
+				9852518F17BD326600B348F4 /* RVPointShader.vsh */,
+				9852519017BD326600B348F4 /* RVPointShader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98FB7E6717AD75D3000262F2 /* Revolved */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FB7E8B17AD75D3000262F2 /* Build configuration list for PBXNativeTarget "Revolved" */;
+			buildPhases = (
+				98FB7E6417AD75D3000262F2 /* Sources */,
+				98FB7E6517AD75D3000262F2 /* Frameworks */,
+				98FB7E6617AD75D3000262F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Revolved;
+			productName = Revolved;
+			productReference = 98FB7E6817AD75D3000262F2 /* Revolved.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FB7E6017AD75D3000262F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RV;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bartosz Ciechanowski";
+				TargetAttributes = {
+					98FB7E6717AD75D3000262F2 = {
+						DevelopmentTeam = HTQ58ZJ2Z9;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 98FB7E6317AD75D3000262F2 /* Build configuration list for PBXProject "Revolved" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98FB7E5F17AD75D3000262F2;
+			productRefGroup = 98FB7E6917AD75D3000262F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FB7E6717AD75D3000262F2 /* Revolved */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98FB7E6617AD75D3000262F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B8E4C417FC87C5002F8DDB /* RVBendTutorialPage.xib in Resources */,
+				98B8E4B517FB757B002F8DDB /* RVRevolvedTutorialPageSolid.xib in Resources */,
+				98294FBE17D5325A003CAE5F /* RVAxisShader.vsh in Resources */,
+				98FDDB39180176AD00F16136 /* sprites.png in Resources */,
+				98294FBF17D5325A003CAE5F /* RVAxisShader.fsh in Resources */,
+				98A9800717E8FCDF00F09CFD /* RVModelButtonsView.xib in Resources */,
+				98B8E4AA17FB5FAC002F8DDB /* RVRevolvedTutorialPage.xib in Resources */,
+				98A9800C17E8FD9500F09CFD /* RVPreviewViewController.xib in Resources */,
+				98FB7E7617AD75D3000262F2 /* InfoPlist.strings in Resources */,
+				98B8E49B17FB5249002F8DDB /* RVDrawingTutorialPage.xib in Resources */,
+				98FDDB401801E4A600F16136 /* model1.rvlvd in Resources */,
+				985E10EF17CA778C00BE4C28 /* RVDrawViewController.xib in Resources */,
+				98ADF01D17FDF86200D58007 /* RVFinishTutorialPage.xib in Resources */,
+				98FB7EC717AD864A000262F2 /* RVModelShader.vsh in Resources */,
+				9832A666186DEB7A003501AE /* RVExportViewController.xib in Resources */,
+				98FB7EC817AD864A000262F2 /* RVModelShader.fsh in Resources */,
+				98D6BA0817F0EF2200BFEDB4 /* RVCreditsViewController.xib in Resources */,
+				98FDDB421801E4A600F16136 /* model3.rvlvd in Resources */,
+				98ADF00517FCB44900D58007 /* RVSelectTutorialPage.xib in Resources */,
+				9872E2F117EB17E2000385EC /* mail.txt in Resources */,
+				98B8E4C917FCB2C3002F8DDB /* RVStartTutorialPage.xib in Resources */,
+				9873945F17C400BB0067FED5 /* RVModelsViewController.xib in Resources */,
+				98FDDB37180176A000F16136 /* noise.png in Resources */,
+				98C5FEAA17B2D93700022331 /* RVLineShader.vsh in Resources */,
+				980CC35E17F0AECD0057D5AD /* RVSettingsButtonsView.xib in Resources */,
+				98C5FEA917B2D93700022331 /* RVLineShader.fsh in Resources */,
+				982D8D0217DCDEB6004C273F /* RVRootViewController.xib in Resources */,
+				9872E30017EDF37D000385EC /* RVTutorialViewController.xib in Resources */,
+				98B8E48E17FB3EDE002F8DDB /* RVSegmentsTutorialPage.xib in Resources */,
+				9873946817C405130067FED5 /* RVPictureViewController.xib in Resources */,
+				9873946117C400D30067FED5 /* Images.xcassets in Resources */,
+				98FDDB411801E4A600F16136 /* model2.rvlvd in Resources */,
+				9852519117BD326600B348F4 /* RVPointShader.vsh in Resources */,
+				9852519217BD326600B348F4 /* RVPointShader.fsh in Resources */,
+				98C5FE9C17B2BAFD00022331 /* RVModelViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98FB7E6417AD75D3000262F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98557F6D17DCD26A0062472B /* RVRenderingController.m in Sources */,
+				9861247E17C7FA290051C092 /* RVModelManager.m in Sources */,
+				9873947317C559790067FED5 /* RVOpenGLView.m in Sources */,
+				98475ACE17C0D232002FD2AB /* RVColorProvider.m in Sources */,
+				98EAA2301804AC6800D0B527 /* RVTutorialScrollView.m in Sources */,
+				9873945E17C400BB0067FED5 /* RVModelsViewController.m in Sources */,
+				98A3452417B7AD2900D0C82F /* RVGuideline.m in Sources */,
+				98A3452117B7A16300D0C82F /* RVSegmentConnection.m in Sources */,
+				9872E2FB17EDF2BB000385EC /* RVTutorialPage.m in Sources */,
+				9852518817BD1F9C00B348F4 /* RVEndPoint.m in Sources */,
+				981395A917DD144700C17CB1 /* RVQuaternionAnimation.m in Sources */,
+				98A3451C17B6CAE700D0C82F /* RVMeshController.m in Sources */,
+				9832A67A186E0F98003501AE /* mztools.c in Sources */,
+				98D6BA0717F0EF2200BFEDB4 /* RVCreditsViewController.m in Sources */,
+				98FB7E7817AD75D3000262F2 /* main.m in Sources */,
+				98557F6717D7C6190062472B /* RVGuidelineDotSprite.m in Sources */,
+				98FB7E7C17AD75D3000262F2 /* AppDelegate.m in Sources */,
+				98ED503017C7CCDA00E5FE1F /* RVModelSerializer.m in Sources */,
+				98557F6417D6758D0062472B /* RVAxisSprite.m in Sources */,
+				9850E0AC17F74376006B8ACD /* UIView+RotationAnimation.m in Sources */,
+				98294FAC17CFD852003CAE5F /* NSArray+Functional.m in Sources */,
+				98B8E49917FB5233002F8DDB /* RVDrawingTutorialPage.m in Sources */,
+				98C5FE9417B2B56800022331 /* RVDrawViewController.m in Sources */,
+				9861248E17C802060051C092 /* UIColor+RevolvedColors.m in Sources */,
+				98A9800517E8FCD500F09CFD /* RVModelButtonsView.m in Sources */,
+				98A3451917B6CAD500D0C82F /* RVPointMeshController.m in Sources */,
+				9852518217BD1F8400B348F4 /* RVAnchorPoint.m in Sources */,
+				98B8E4C717FCB2BD002F8DDB /* RVStartTutorialPage.m in Sources */,
+				9852518E17BD324900B348F4 /* RVPointShader.m in Sources */,
+				985E10E817CA6B1600BE4C28 /* RVFloatAnimation.m in Sources */,
+				9861248317C7FCC80051C092 /* RVModel.m in Sources */,
+				98ADF01B17FDF85C00D58007 /* RVFinishTutorialPage.m in Sources */,
+				98FB7E9117AD76BF000262F2 /* RVSegment.m in Sources */,
+				9832A67C186E0F98003501AE /* zip.c in Sources */,
+				98FB7E9D17AD78F0000262F2 /* RVModelViewController.m in Sources */,
+				98C5FEA217B2CA0300022331 /* RVLineMeshController.m in Sources */,
+				988180C617F2361200C0E6BD /* MFMailComposeViewController+SendIfPossible.m in Sources */,
+				9873945717C200B40067FED5 /* RVLineSprite.m in Sources */,
+				98FDDB3C1801930F00F16136 /* RVColorPickerButton.m in Sources */,
+				98C5FEAD17B2EFCD00022331 /* DrawGestureRecognizer.m in Sources */,
+				9861249417C8DDBB0051C092 /* RVRootViewController.m in Sources */,
+				9861248717C8012D0051C092 /* RVModelCell.m in Sources */,
+				9852519517BEC58200B348F4 /* RVDeleteView.m in Sources */,
+				98FB7EAE17AD7F21000262F2 /* CameraController.m in Sources */,
+				98B8E4A817FB5FA1002F8DDB /* RVRevolvedTutorialPage.m in Sources */,
+				98B8E48C17FB3ECD002F8DDB /* RVSegmentsTutorialPage.m in Sources */,
+				9859CA1317E625AC000E539F /* NSMutableArray+MoveObject.m in Sources */,
+				985E10DC17CA54F300BE4C28 /* NSMapTable+BlockEnumeration.m in Sources */,
+				98557F6A17D7CB300062472B /* RVGuidlineDotMeshController.m in Sources */,
+				985E10E117CA688400BE4C28 /* RVAnimator.m in Sources */,
+				9859CA1617E627BA000E539F /* NSMutableOrderedSet+MoveObject.m in Sources */,
+				9832A679186E0F98003501AE /* ioapi.c in Sources */,
+				985E10E517CA691100BE4C28 /* RVAnimation.m in Sources */,
+				98B8E4AD17FB695F002F8DDB /* RVTutorialLineImageView.m in Sources */,
+				98294FB317D361C6003CAE5F /* RVModelMetadata.m in Sources */,
+				9873945A17C200FC0067FED5 /* RVPointSprite.m in Sources */,
+				9832A665186DEB7A003501AE /* RVExportViewController.m in Sources */,
+				98FB7EB117AD7FD4000262F2 /* Camera.m in Sources */,
+				98294FB017D354A1003CAE5F /* NSError+RevolvedErrors.m in Sources */,
+				9852517D17BC09C600B348F4 /* RVColorPicker.m in Sources */,
+				98CD44DA18303F0D004D1986 /* RVExporter.m in Sources */,
+				9832A67B186E0F98003501AE /* unzip.c in Sources */,
+				98CD44DD18304056004D1986 /* RVSTLExporter.m in Sources */,
+				9873945317C200910067FED5 /* RVSprite.m in Sources */,
+				98B8E4C217FC87BE002F8DDB /* RVBendTutorialPage.m in Sources */,
+				985E10EB17CA6B2200BE4C28 /* RVVectorAnimation.m in Sources */,
+				98C5FEA617B2D8AC00022331 /* RVLineShader.m in Sources */,
+				9872E2FF17EDF37D000385EC /* RVTutorialViewController.m in Sources */,
+				98FB7EBA17AD8480000262F2 /* RVModelMeshController.m in Sources */,
+				9872E2F417EBA5A9000385EC /* RVUserDefaults.m in Sources */,
+				98FB7EBB17AD8480000262F2 /* Renderer.m in Sources */,
+				98A9800B17E8FD9500F09CFD /* RVPreviewViewController.m in Sources */,
+				9832A66C186E0E72003501AE /* SSZipArchive.m in Sources */,
+				9852518517BD1F9300B348F4 /* RVControlPoint.m in Sources */,
+				98FB7EC517AD864A000262F2 /* BCShader.m in Sources */,
+				98ADF00317FCB44200D58007 /* RVSelectTutorialPage.m in Sources */,
+				98C5FEB317B65EE400022331 /* RVDrawController.m in Sources */,
+				980CC35C17F0AEAE0057D5AD /* RVSettingsButtonsView.m in Sources */,
+				98FB7EC617AD864A000262F2 /* RVModelShader.m in Sources */,
+				9859CA1E17E651B4000E539F /* RVAddProgressView.m in Sources */,
+				98ADF01017FCBE7000D58007 /* RVPassForwardView.m in Sources */,
+				98C5FEB917B66BEB00022331 /* RVPoint.m in Sources */,
+				98C5FE9F17B2BC9D00022331 /* RVSpaceConverter.m in Sources */,
+				98557F5E17D53E7D0062472B /* RVAxisMeshController.m in Sources */,
+				986C0C3F183816F300F8F51D /* RVOBJExporter.m in Sources */,
+				98294FBB17D53157003CAE5F /* RVAxisShader.m in Sources */,
+				985E10D917C946E600BE4C28 /* RVModelSprite.m in Sources */,
+				9873946717C405130067FED5 /* RVPictureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98ED508117C7CF6800E5FE1F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98ED508217C7CF6800E5FE1F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		98FB7E7417AD75D3000262F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FB7E7517AD75D3000262F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98FB7E8917AD75D3000262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		98FB7E8A17AD75D3000262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FB7E8C17AD75D3000262F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_FAST_MATH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Revolved/Revolved-Prefix.pch";
+				INFOPLIST_FILE = "Revolved/Revolved-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Revolved;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98FB7E8D17AD75D3000262F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_FAST_MATH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Revolved/Revolved-Prefix.pch";
+				INFOPLIST_FILE = "Revolved/Revolved-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Revolved;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		98FDDB461801FB6B00F16136 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bartosz Ciechanowski (69S9R99KL3)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		98FDDB471801FB6B00F16136 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_FAST_MATH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Revolved/Revolved-Prefix.pch";
+				INFOPLIST_FILE = "Revolved/Revolved-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Revolved;
+				PROVISIONING_PROFILE = "BFF902A3-388D-46AC-909A-1DF3A908F17E";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		98FDDB491801FB7000F16136 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bartosz Ciechanowski (69S9R99KL3)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		98FDDB4A1801FB7000F16136 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_FAST_MATH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Revolved/Revolved-Prefix.pch";
+				INFOPLIST_FILE = "Revolved/Revolved-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Revolved;
+				PROVISIONING_PROFILE = "AEBFC96F-58A6-40E3-A075-6D947DCF0841";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98FB7E6317AD75D3000262F2 /* Build configuration list for PBXProject "Revolved" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FB7E8917AD75D3000262F2 /* Debug */,
+				98FB7E8A17AD75D3000262F2 /* Release */,
+				98FDDB461801FB6B00F16136 /* AdHoc */,
+				98FDDB491801FB7000F16136 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FB7E8B17AD75D3000262F2 /* Build configuration list for PBXNativeTarget "Revolved" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FB7E8C17AD75D3000262F2 /* Debug */,
+				98FB7E8D17AD75D3000262F2 /* Release */,
+				98FDDB471801FB6B00F16136 /* AdHoc */,
+				98FDDB4A1801FB7000F16136 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98FB7E6017AD75D3000262F2 /* Project object */;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5023" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RVExportViewController">
+            <connections>
+                <outlet property="backgroundView" destination="rvg-Rx-BLP" id="tMF-eN-oIw"/>
+                <outlet property="containerView" destination="Qs6-gU-tIB" id="c0X-xZ-wOV"/>
+                <outlet property="objButton" destination="NNT-FX-4aj" id="Ys7-ls-AUb"/>
+                <outlet property="rvlvdButton" destination="GdO-MW-X6e" id="mcx-O3-gPD"/>
+                <outlet property="stlButton" destination="uex-r9-09A" id="Xn1-Wt-Vhe"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="rvg-Rx-BLP" userLabel="Background" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="Qs6-gU-tIB" userLabel="Container">
+                            <rect key="frame" x="309" y="294" width="406" height="179"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="uex-r9-09A">
+                                    <rect key="frame" x="35" y="35" width="86" height="109"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" image="StlFileIcon"/>
+                                    <connections>
+                                        <action selector="stlButtonTapped:" destination="-1" eventType="touchUpInside" id="UFB-q4-NY6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="NNT-FX-4aj">
+                                    <rect key="frame" x="160" y="35" width="86" height="109"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" image="ObjFileIcon"/>
+                                    <connections>
+                                        <action selector="objButtonTapped:" destination="-1" eventType="touchUpInside" id="C17-Ub-bN0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="GdO-MW-X6e">
+                                    <rect key="frame" x="285" y="35" width="86" height="109"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                    <state key="normal" image="RvlvdFileIcon"/>
+                                    <connections>
+                                        <action selector="rvlvdButtonTapped:" destination="-1" eventType="touchUpInside" id="QAp-mM-dOt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.9379276916" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.14999999999999999" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="backgroundTouched:" destination="-1" eventType="touchUpOutside" id="tub-r9-bo6"/>
+                        <action selector="backgroundTouched:" destination="-1" eventType="touchUpInside" id="vwt-hK-D6h"/>
+                    </connections>
+                </view>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ObjFileIcon" width="86" height="109"/>
+        <image name="RvlvdFileIcon" width="86" height="109"/>
+        <image name="StlFileIcon" width="86" height="109"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="RVDrawingTutorialPage">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="576"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="nzv-1f-LlC">
+                    <rect key="frame" x="594" y="0.0" width="106" height="576"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialiPadCamera" id="VpZ-vB-Rf4">
+                            <rect key="frame" x="45" y="280" width="16" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialiPadHomeWhite" id="CsE-Pd-o06">
+                            <rect key="frame" x="26" y="261" width="54" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.98905109489051091" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Pzm-3u-Vzt">
+                    <rect key="frame" x="590" y="0.0" width="4" height="576"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialAxis" id="TpJ-bo-LNe">
+                    <rect key="frame" x="128" y="0.0" width="2" height="576"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialLine" id="jhz-Oa-li2" customClass="RVTutorialLineImageView">
+                    <rect key="frame" x="364" y="392" width="6" height="6"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iPadBorderView" destination="nzv-1f-LlC" id="Nfp-CN-Eyc"/>
+                <outlet property="iPadCameraImageView" destination="VpZ-vB-Rf4" id="LrH-z2-6VQ"/>
+                <outlet property="iPadHomeButtonImageView" destination="CsE-Pd-o06" id="fcX-jf-pE6"/>
+                <outlet property="line" destination="jhz-Oa-li2" id="0mA-RI-RH6"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="TutorialAxis" width="4" height="1052"/>
+        <image name="TutorialLine" width="6" height="6"/>
+        <image name="TutorialiPadCamera" width="32" height="32"/>
+        <image name="TutorialiPadHomeWhite" width="108" height="108"/>
+    </resources>
+</document>
